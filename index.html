@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+	<head>
+        <meta charset="utf-8">	
+		<title>Neon</title>
+		<link rel="stylesheet" href="style.css">		
+	</head>
+	
+	<body>
+		
+		<canvas id="canvas"></canvas>
+		
+		<div id="controls">
+			
+			<h1>Neon</h1>
+			
+			<p>Click and drag to draw/write. Move sliders to adjust effects. Double click to clear screen. (No sliders in Firefox, sorry! & best in chrome...). See explanation <a href="http://neilcarpenter.com/labs/neon-writer/" target="_blank">here</a>.</p>
+			
+			<p>
+				<label>Width</label>
+				<input class="controller" name="lineWidth" type="range" min="1" max="10" step="0.5" value="7">
+			</p>
+							
+			<p class="color">
+				<label>Colour</label>
+				<input class="controller" name="hue" type="range" min="0" max="360" value="350">
+				<span id="color-indicator"></span>
+			</p>
+			
+			<button id="reset">Reset</button>
+			
+			<a href="#" class="toggle-controls" id="open">Open controls</a>
+			<a href="#" class="toggle-controls" id="close">Close controls</a>
+		</div>		
+		
+		<a href="https://github.com/neilcarpenter/Neon-writer" id="ribbon"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 50;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+		
+		<script src="script.js"></script>
+
+		<script type="text/javascript">
+		    var _gaq = _gaq || [];
+		    _gaq.push(['_setAccount', 'UA-16253496-4']);
+		    _gaq.push(['_trackPageview']);
+		    (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		    })();
+		</script>			
+		
+	</body>
+	
+</html>
